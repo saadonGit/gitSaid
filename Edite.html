@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .container-Global{
+            border:1px solid;
+            width: fit-content;
+            margin:0px auto;
+        }
+     .container{
+         border:1px solid;
+         display:flex;
+         width: fit-content;
+         flex-wrap: wrap;
+         
+         /* margin:0 auto; */
+     }
+
+
+     .container>img{
+        width: 26rem;
+    margin: 28px;
+    /* transition: all .7s; */
+     }
+     .container-btns{
+      display:flex;
+      border:1px solid;
+      width: 250px;
+
+
+     }
+     .container-btns>button{
+         width: 90%;
+         padding:10px 0px;
+         margin:10px;
+        cursor: pointer;
+     }
+     .container-Gauch{
+        border: 2px solid red;
+    padding: 0 15px;
+    padding-bottom: 110px;
+    margin: 0 auto;
+     }
+     .container-btns-two{
+        border:1px solid;
+        width: 90%;
+        margin:0 auto;
+        text-align: center;
+        
+
+     }
+     .container-btns-two>button{
+        
+       background: transparent;
+       border:1px solid;
+       cursor: pointer;
+
+     }
+     .container-tree-btns{
+         display:flex;
+         justify-content: space-between;
+     }
+     .container-tree-btns .btns{
+         width: 100px;
+         padding:10px 0px;
+         margin:10px;
+     }
+     .btns1{
+         background: transparent;
+         border:1.3px solid;
+         cursor: pointer;
+         
+     }
+     input[type="range"]{
+         width: 250px;
+         background-color:blue;
+         
+     }
+     
+     .flex{
+         display:flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .container.disabled{
+         opacity:0.6;
+         pointer-events: none;
+     }
+     .active{
+         background-color: rgb(101, 147, 223);
+         border:none;
+         color:#fff;
+     }
+    </style>
+</head>
+<body>
+    <section class="container-Global">
+        <div>
+            <h1>image</h1>
+            <div class="container ">
+                <div class="container-Gauch">
+                <p>Filter</p>
+                <div class="container-btns">
+                <button class="button active">Bightness</button>
+                <button class="button" >soturation</button>
+                 </div>
+                 <div class="container-btns">
+                <button class="button">Invesion</button>
+                <button class="button">Groyscode</button>
+                </div>
+                 <br>
+                <label class="flex">
+                    <p class="paraRange">Bightness</p>
+                    <p class="Numb">40%</p>
+                </label>
+                <input type="range" id="vol" name="vol" min="0" max="100">
+
+                <div>
+                    <strong>position</strong><br>
+                    <div class="container-btns-two">
+                    <button><i class="material-icons move1">&#xe166;</i></button>
+                    <button><i class="material-icons move2">&#xe15a;</i></button>
+                    <button> <i class="material-icons move3">&#xe248;</i></button>
+                    <button><i class="material-icons move4">&#xe259;</i></button>
+                    </div>
+                </div>
+
+                  </div>
+
+              <img class="mage" src="6eCXduaLtTjxr74wpHJ534TrTiE.jpg">
+              <!--  -->
+            </div>
+            <footer>
+                <div class="container-tree-btns">
+                    <div>
+                    <button class="btns btns1">Simple</button>
+                    </div>
+                    <div>
+                        <input type="file" id="myfile" name="myfile" accept="image/*" hidden >
+                        <button class="btns btns2">choose image</button>
+                        <button class="btns btns3">Save Image...</button>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+     </section>
+     <script src="Edit.js"></script>
+</body>
+</html>
